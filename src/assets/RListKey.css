@@ -1,0 +1,14 @@
+ul{
+    display: inline-block;
+}
+ul>li{
+    margin-left: 20px;
+}
+
+/* .abc{
+    background: red;
+} */
+
+.removeListStyle{
+    list-style: none;
+}

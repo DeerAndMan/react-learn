@@ -1,0 +1,9 @@
+.movie{
+    float: left;
+}
+.movie > span {
+    color: red;
+}
+.movie > button {
+    background-color: pink;
+}

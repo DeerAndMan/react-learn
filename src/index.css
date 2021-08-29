@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 选中后的背景颜色 */
+::selection {
+  background:pink;
+  color:white;
+}
+::-moz-selection {
+  background:#ccc;
+  color:#ff645d;
+}
+::-webkit-selection {
+  background:#ccc;
+  color:#ff645d;
+}
+
+.HLeft {
+    width: 55%;
+    position: absolute;
+}
+
+.HRight {
+    width: 45%;
+    position: absolute;
+    right: 0;
+}
