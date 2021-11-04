@@ -11,7 +11,7 @@ import styleName from '../../assets/test.module.css'
         它们不需要是全局唯一
 */
 
-const num = [1, 2, 3];
+const num = [1, 2, 3,];
 const numList = num.map( 
     num => <li key={num.toString()}>{ num * 2 }</li>
 )

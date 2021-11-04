@@ -1,3 +1,6 @@
 .abc{
-    background: gray;
+    background: rgb(202, 175, 175);
+}
+ul > li {
+    float: left;
 }

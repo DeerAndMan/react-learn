@@ -29,21 +29,36 @@ export default class RForm extends React.Component{
         this.setState({ TV: e.target.value })
     }
 
+    /* React 声明周期函数 */
+    componentDidMount() {
+        // console.log('RFrom 表单组件初始化完成');
+    }
+    componentDidUpdate() {
+        // console.log("RFrom 表单组件更新");
+    }
     render() {
         return(
             <React.StrictMode>
+                <h2 style={{
+                    color: "red",
+                    backgroundColor: '#3699e6'
+                }}> 表单学习：受控组件，非受控组件 </h2>
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         名字：
                         <input type='text' name='name' autoComplete="off"
                             value={this.state.value}
-                            onChange={this.handleChange} />
+                            onChange={this.handleChange} 
+                        />
                     </label>
                     <input type="submit" value='提交' />
                 </form>
-                <textarea value={this.state.TV}
+                <textarea 
+                    cols="20" rows="3"
+                    value={this.state.TV}
                     onChange={this.thChange} 
-                    cols="20" rows="3"></textarea>
+                >
+                </textarea>
                 
             </React.StrictMode>
         )

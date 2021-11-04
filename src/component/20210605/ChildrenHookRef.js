@@ -35,9 +35,9 @@ const ChildrenHookRef = (props, ref) => {
             返回的ref 对象在组件的整个生命周期内保持不变。
         */
         foreverRef.current['idInterval'] = idInterval;
-        if( timeNum === 5 ) stopInterval()
+        if( timeNum === 3 ) stopInterval()
         return () => {
-            clearInterval( foreverRef.current['idInterval'] )
+            clearInterval( foreverRef['current']['idInterval'] )
         }
     }, [timeNum]);
 
@@ -49,9 +49,9 @@ const ChildrenHookRef = (props, ref) => {
 
     return(
         <div>
-            ChildrenHookRef 子组件
-            {props.name} {num},
-            {'计时累加：'} {timeNum}
+            <h3>ChildrenHookRef 子组件</h3>
+            {props.name} { num },
+            {'计时累加：'} { timeNum }
             <Button type="primary" onClick={ stopInterval } >停止计时</Button>
         </div>
     )

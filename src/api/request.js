@@ -29,8 +29,9 @@ axios.interceptors.response.use(
         return response.data
     },
     error => {
-        message.info('This is a xhr error');
+        message.info('This is a xhr error')
         return Promise.reject(error)
+        
     }
 )
 

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,9 +26,24 @@ code {
   color:#ff645d;
 }
 
-.HLeft {
-    width: 55%;
-    position: absolute;
+.my__component__wrapper {
+  position: relative;
+    width: 100%;
+    color: black;
+    background-color: rgb(100, 237, 173);
+
+    font-size: 1rem;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    min-height: calc(100vh - 90px);
+    border: 1px solid red;
 }
 
 .HRight {
